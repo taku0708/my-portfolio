@@ -24,6 +24,7 @@
   background-color: green;
 }
 .imageColorBox3 {
+  position: relative;
   width: 100%;
   height: 33%;
   z-index: -1;
@@ -143,4 +144,32 @@ span {
 .menu_open > span:nth-child(3) {
   transition-delay: 70ms;
   transform: translateY(-10px) rotate(-135deg);
+}
+.image1 {
+  position: absolute;
+  display: inline-block;
+  top: 0;
+  left: 0;
+  width: 33%;
+  height: 100%;
+  background-size: cover;
+  /* background-color: tomato; */
+}
+.image2 {
+  position: absolute;
+  display: inline-block;
+  top: 0;
+  left: 33%;
+  width: 34%;
+  height: 100%;
+  background-color: green;
+}
+.image3 {
+  position: absolute;
+  display: inline-block;
+  top: 0;
+  left: 67%;
+  width: 34%;
+  height: 100%;
+  background-color: pink;
 }
