@@ -12,6 +12,7 @@
   background-color: orange;
 }
 .imageColorBox2 {
+  position: relative;
   width: 100%;
   height: 34%;
   z-index: -1;
@@ -45,6 +46,30 @@ span {
   margin-top: 3em;
   font-size: 0.8em;
 }
+.line3 {
+  margin-top: 0;
+  font-weight: bold;
+}
+.line5 {
+  margin-top: 0;
+}
+.line7 {
+  margin-top: 0;
+}
+.lastName {
+  position: absolute;
+  font-size: 5em;
+  top: 72px;
+  left: 260px;
+  visibility: hidden;
+}
+.firstName {
+  position: absolute;
+  font-size: 5em;
+  top: 72px;
+  left: 940px;
+  visibility: hidden;
+}
 .menu_box {
   display: inline-block;
   margin-top: 3em;
@@ -52,7 +77,6 @@ span {
   width: 50px;
   height: 50px;
   background-color: black;
-  cursor: pointer;
 }
 .menu_container {
   position: relative;
@@ -68,9 +92,16 @@ span {
   visibility: hidden;
   text-align: right;
 }
-img {
+#signature {
   width: 600px;
   margin-left: 20em;
+}
+#centerOfIndia {
+  width: 150px;
+  position: absolute;
+  top: 62px;
+  left: 640px;
+  visibility: hidden;
 }
 #english:hover {
   cursor: pointer;
@@ -80,4 +111,36 @@ img {
 }
 #hobby:hover {
   cursor: pointer;
+}
+.menu_icon {
+  width: 30px;
+  height: 30px;
+  margin: 10px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+.menu_icon > span {
+  display: block;
+  margin-left: 0;
+  margin-bottom: 8px;
+  width: 30px;
+  height: 2px;
+  background-color: white;
+  transition: transform 0.7s;
+}
+.menu_icon > span:last-child {
+  margin-bottom: 0;
+}
+.menu_open > span:nth-child(1) {
+  transition-delay: 70ms;
+  transform: translateY(10px) rotate(135deg);
+}
+.menu_open > span:nth-child(2) {
+  transform: translateX(-18px) scaleX(0);
+}
+.menu_open > span:nth-child(3) {
+  transition-delay: 70ms;
+  transform: translateY(-10px) rotate(-135deg);
 }
