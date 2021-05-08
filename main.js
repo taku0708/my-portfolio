@@ -62,6 +62,14 @@ hindhi.addEventListener("click", () => {
   line1.textContent = "";
   line2.textContent = "";
   line3.textContent = "";
+  line4.textContent =
+    "मैं टोक्यो यूनिवर्सिटी ऑफ फॉरेन स्टडीज में हिंदियों का अध्ययन करता हूं।  वर्तमान में, मैं अफ्रीका की राजनीति पर शोध करता हूं।";
+  line5.textContent =
+    "हालाँकि, आपके साथ फ्रैंक होने के लिए, मुझे हिंदियों का अध्ययन करना पसंद नहीं है, कहने के लिए, भाषाएँ।";
+  line6.textContent =
+    "अब, मैं एक इंजीनियर के रूप में कंपनी में काम करने के लिए विश्वविद्यालय से एक साल की छुट्टी ले रहा हूं।";
+  line7.textContent =
+    "इतना कठिन, इतना व्यस्त, इतना कठिन, लेकिन उससे भी अधिक, मैं इतना खुश महसूस करता हूं";
   lastName.style.visibility = "visible";
   firstName.style.visibility = "visible";
   //   乱数画像OFF
@@ -90,6 +98,14 @@ english.addEventListener("click", () => {
   line1.textContent = "Geeksalon/webEx/10th";
   line2.textContent = "Born in 1999, Living in Tokyo";
   line3.textContent = "grew up in Tokunoshima-island in childhood";
+  line4.textContent =
+    "I study Hindhi in Tokyo University of foreign studies. Currently, I research the Politics of Africa.";
+  line5.textContent =
+    "However, to be frank with you, I don't like studying Hindhi, more to say, the languages.";
+  line6.textContent =
+    " Now, I'm taking a year off from the university to work in the company as a engineer.";
+  line7.textContent =
+    "so hard, so busy, so difficult, but more than that, I feel so happy";
   lastName.style.visibility = "hidden";
   firstName.style.visibility = "hidden";
   //   乱数画像OFF
@@ -117,10 +133,14 @@ hobby.addEventListener("click", () => {
   clothBox.classList.add("image2");
   cyclingBox.classList.add("image2");
   saunaBox.classList.add("image3");
-  const coffee = ["c１.jpeg", "c２.jpeg", "c３.jpeg"];
-  const cloth = ["h１.jpeg", "h２.jpeg", "h３.jpeg"];
-  const sauna = ["s１.jpeg", "s２.jpeg", "s３.jpeg"];
-  const cycling = ["cycling1.jpeg", "cycling2.jpeg", "cycling3.jpeg"];
+  const coffee = ["coffee/c１.jpeg", "coffee/c２.jpeg", "coffee/c３.jpeg"];
+  const cloth = ["cloth/h１.jpeg", "cloth/h２.jpeg", "cloth/h３.jpeg"];
+  const sauna = ["sauna/s１.jpeg", "sauna/s２.jpeg", "sauna/s３.jpeg"];
+  const cycling = [
+    "cycling/cycling1.jpeg",
+    "cycling/cycling2.jpeg",
+    "cycling/cycling3.jpeg",
+  ];
   const coffeeNo = Math.floor(Math.random() * coffee.length);
   const clothNo = Math.floor(Math.random() * cloth.length);
   const saunaNo = Math.floor(Math.random() * sauna.length);
@@ -145,4 +165,10 @@ hobby.addEventListener("click", () => {
   imageColorBox2.append(coffeeBox);
   imageColorBox2.append(clothContent);
   imageColorBox2.append(saunaBox);
+  // hobby
+  clothContent.textContent = "hobby";
+  coffeeContent.textContent = "coffee";
+  saunaContent.textContent = "old cloth";
+  blackBlock1.textContent = "cycling";
+  blackBlock3.textContent = "sauna";
 });

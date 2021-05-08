@@ -165,6 +165,33 @@ span {
   background-color: white;
 }
 div > .image2 {
+  font-size: 2em;
+  font-family: "Avenir", "Helvetica Neue", "Helvetica", "Arial", "Hiragino Sans",
+    "ヒラギノ角ゴシック", YuGothic, "Yu Gothic", "メイリオ", "ＭＳ Ｐゴシック",
+    "MS PGothic";
+  line-height: 270px;
+  color: white;
+  text-align: center;
+  background-color: black;
+}
+div > .image1 {
+  font-size: 2em;
+  font-family: "Avenir", "Helvetica Neue", "Helvetica", "Arial", "Hiragino Sans",
+    "ヒラギノ角ゴシック", YuGothic, "Yu Gothic", "メイリオ", "ＭＳ Ｐゴシック",
+    "MS PGothic";
+  line-height: 270px;
+  color: white;
+  text-align: center;
+  background-color: black;
+}
+div > .image3 {
+  font-size: 2em;
+  font-family: "Avenir", "Helvetica Neue", "Helvetica", "Arial", "Hiragino Sans",
+    "ヒラギノ角ゴシック", YuGothic, "Yu Gothic", "メイリオ", "ＭＳ Ｐゴシック",
+    "MS PGothic";
+  line-height: 270px;
+  color: white;
+  text-align: center;
   background-color: black;
 }
 .image3 {
