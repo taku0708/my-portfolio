@@ -24,7 +24,6 @@ const lastName = document.querySelector(".lastName");
 const hindhi = document.querySelector("#hindhi");
 const english = document.querySelector("#english");
 const hobby = document.querySelector("#hobby");
-console.log(moreInformation);
 // 乱数画像表示
 const coffeeBox = document.createElement("img");
 const clothBox = document.createElement("img");
@@ -120,14 +119,6 @@ english.addEventListener("click", () => {
   blackBlock3.remove();
 });
 hobby.addEventListener("click", () => {
-  // 共通処理
-  menuContent.style.visibility = "hidden";
-  menuIcon.classList.remove("menu_open");
-  imageColorBox1.classList.remove("bgkColor1");
-  imageColorBox2.classList.remove("bgkColor2");
-  imageColorBox3.classList.remove("bgkColor3");
-  lastName.style.visibility = "hidden";
-  firstName.style.visibility = "hidden";
   //   乱数画像表示
   coffeeBox.classList.add("image1");
   clothBox.classList.add("image2");
@@ -171,4 +162,62 @@ hobby.addEventListener("click", () => {
   saunaContent.textContent = "old cloth";
   blackBlock1.textContent = "cycling";
   blackBlock3.textContent = "sauna";
+  // 画像が表示されてから処理を実行
+  window.onload() = function () {
+    // 共通処理
+    menuContent.style.visibility = "hidden";
+    menuIcon.classList.remove("menu_open");
+    imageColorBox1.classList.remove("bgkColor1");
+    imageColorBox2.classList.remove("bgkColor2");
+    imageColorBox3.classList.remove("bgkColor3");
+    // 手書き画像表示のON/OFF
+    lastName.style.visibility = "hidden";
+    firstName.style.visibility = "hidden";
+  };
 });
+
+// const commonAction = () => {
+//   menuContent.style.visibility = "hidden";
+//   menuIcon.classList.remove("menu_open");
+//   if (element.classList.contains("bgkcolor") == true) {
+//     imageColorBox1.classList.remove("bgkColor1");
+//     imageColorBox2.classList.remove("bgkColor2");
+//     imageColorBox3.classList.remove("bgkColor3");
+//   } else {
+//     imageColorBox1.classList.add("bgkColor1");
+//     imageColorBox2.classList.add("bgkColor2");
+//     imageColorBox3.classList.add("bgkColor3");
+//   }
+// };
+
+// const changeLine = () => {
+//   if (english.onclick) {
+//     line1.textContent = "Geeksalon/webEx/10th";
+//     line2.textContent = "Born in 1999, Living in Tokyo";
+//     line3.textContent = "grew up in Tokunoshima-island in childhood";
+//     line4.textContent =
+//       "I study Hindhi in Tokyo University of foreign studies. Currently, I research the Politics of Africa.";
+//     line5.textContent =
+//       "However, to be frank with you, I don't like studying Hindhi, more to say, the languages.";
+//     line6.textContent =
+//       " Now, I'm taking a year off from the university to work in the company as a engineer.";
+//     line7.textContent =
+//       "so hard, so busy, so difficult, but more than that, I feel so happy";
+//     lastName.style.visibility = "hidden";
+//     firstName.style.visibility = "hidden";
+//   } else if (hindhi.onclick) {
+//     line1.textContent = "";
+//     line2.textContent = "";
+//     line3.textContent = "";
+//     line4.textContent =
+//       "मैं टोक्यो यूनिवर्सिटी ऑफ फॉरेन स्टडीज में हिंदियों का अध्ययन करता हूं।  वर्तमान में, मैं अफ्रीका की राजनीति पर शोध करता हूं।";
+//     line5.textContent =
+//       "हालाँकि, आपके साथ फ्रैंक होने के लिए, मुझे हिंदियों का अध्ययन करना पसंद नहीं है, कहने के लिए, भाषाएँ।";
+//     line6.textContent =
+//       "अब, मैं एक इंजीनियर के रूप में कंपनी में काम करने के लिए विश्वविद्यालय से एक साल की छुट्टी ले रहा हूं।";
+//     line7.textContent =
+//       "इतना कठिन, इतना व्यस्त, इतना कठिन, लेकिन उससे भी अधिक, मैं इतना खुश महसूस करता हूं";
+//     lastName.style.visibility = "visible";
+//     firstName.style.visibility = "visible";
+//   }
+// };
