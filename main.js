@@ -119,57 +119,58 @@ english.addEventListener("click", () => {
   blackBlock3.remove();
 });
 hobby.addEventListener("click", () => {
-  // 共通処理
-  menuContent.style.visibility = "hidden";
-  menuIcon.classList.remove("menu_open");
-  imageColorBox1.classList.remove("bgkColor1");
-  imageColorBox2.classList.remove("bgkColor2");
-  imageColorBox3.classList.remove("bgkColor3");
-  // 手書き画像表示のON/OFF
-  lastName.style.visibility = "hidden";
-  firstName.style.visibility = "hidden";
-  //   乱数画像表示
-  coffeeBox.classList.add("image1");
-  clothBox.classList.add("image2");
-  cyclingBox.classList.add("image2");
-  saunaBox.classList.add("image3");
-  const coffee = ["coffee/c１.jpeg", "coffee/c２.jpeg", "coffee/c３.jpeg"];
-  const cloth = ["cloth/h１.jpeg", "cloth/h２.jpeg", "cloth/h３.jpeg"];
-  const sauna = ["sauna/s１.jpeg", "sauna/s２.jpeg", "sauna/s３.jpeg"];
-  const cycling = [
-    "cycling/cycling1.jpeg",
-    "cycling/cycling2.jpeg",
-    "cycling/cycling3.jpeg",
-  ];
-  const coffeeNo = Math.floor(Math.random() * coffee.length);
-  const clothNo = Math.floor(Math.random() * cloth.length);
-  const saunaNo = Math.floor(Math.random() * sauna.length);
-  const cyclingNo = Math.floor(Math.random() * cycling.length);
-  coffeeBox.src = coffee[coffeeNo];
-  clothBox.src = cloth[clothNo];
-  saunaBox.src = sauna[saunaNo];
-  cyclingBox.src = cycling[cyclingNo];
-  // 黒枠
-  coffeeContent.classList.add("image1");
-  clothContent.classList.add("image2");
-  saunaContent.classList.add("image3");
-  blackBlock1.classList.add("image1");
-  blackBlock3.classList.add("image3");
-  // hobby title
-  clothContent.textContent = "hobby";
-  coffeeContent.textContent = "coffee";
-  saunaContent.textContent = "old cloth";
-  blackBlock1.textContent = "cycling";
-  blackBlock3.textContent = "sauna";
-  // append
-  imageColorBox1.append(cyclingBox);
-  imageColorBox1.append(blackBlock1);
-  imageColorBox1.append(blackBlock3);
-  imageColorBox2.append(coffeeBox);
-  imageColorBox2.append(clothContent);
-  imageColorBox2.append(saunaBox);
-  imageColorBox3.append(coffeeContent);
-  imageColorBox3.append(clothBox);
-  imageColorBox3.append(saunaContent);
-  window.onload = () => {};
+  window.onload = () => {
+    // 共通処理
+    menuContent.style.visibility = "hidden";
+    menuIcon.classList.remove("menu_open");
+    imageColorBox1.classList.remove("bgkColor1");
+    imageColorBox2.classList.remove("bgkColor2");
+    imageColorBox3.classList.remove("bgkColor3");
+    // 手書き画像表示のON/OFF
+    lastName.style.visibility = "hidden";
+    firstName.style.visibility = "hidden";
+    //   乱数画像表示
+    coffeeBox.classList.add("image1");
+    clothBox.classList.add("image2");
+    cyclingBox.classList.add("image2");
+    saunaBox.classList.add("image3");
+    const coffee = ["coffee/c１.jpeg", "coffee/c２.jpeg", "coffee/c３.jpeg"];
+    const cloth = ["cloth/h１.jpeg", "cloth/h２.jpeg", "cloth/h３.jpeg"];
+    const sauna = ["sauna/s１.jpeg", "sauna/s２.jpeg", "sauna/s３.jpeg"];
+    const cycling = [
+      "cycling/cycling1.jpeg",
+      "cycling/cycling2.jpeg",
+      "cycling/cycling3.jpeg",
+    ];
+    const coffeeNo = Math.floor(Math.random() * coffee.length);
+    const clothNo = Math.floor(Math.random() * cloth.length);
+    const saunaNo = Math.floor(Math.random() * sauna.length);
+    const cyclingNo = Math.floor(Math.random() * cycling.length);
+    coffeeBox.src = coffee[coffeeNo];
+    clothBox.src = cloth[clothNo];
+    saunaBox.src = sauna[saunaNo];
+    cyclingBox.src = cycling[cyclingNo];
+    // 黒枠
+    coffeeContent.classList.add("image1");
+    clothContent.classList.add("image2");
+    saunaContent.classList.add("image3");
+    blackBlock1.classList.add("image1");
+    blackBlock3.classList.add("image3");
+    // hobby title
+    clothContent.textContent = "hobby";
+    coffeeContent.textContent = "coffee";
+    saunaContent.textContent = "old cloth";
+    blackBlock1.textContent = "cycling";
+    blackBlock3.textContent = "sauna";
+    // append
+    imageColorBox1.append(cyclingBox);
+    imageColorBox1.append(blackBlock1);
+    imageColorBox1.append(blackBlock3);
+    imageColorBox2.append(coffeeBox);
+    imageColorBox2.append(clothContent);
+    imageColorBox2.append(saunaBox);
+    imageColorBox3.append(coffeeContent);
+    imageColorBox3.append(clothBox);
+    imageColorBox3.append(saunaContent);
+  };
 });
