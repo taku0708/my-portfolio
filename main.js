@@ -163,7 +163,7 @@ hobby.addEventListener("click", () => {
   blackBlock1.textContent = "cycling";
   blackBlock3.textContent = "sauna";
   // 画像が表示されてから処理を実行
-  window.addEventListener("DOMContentLoaded", () => {
+  window.addEventListener("load", () => {
     // 共通処理
     menuContent.style.visibility = "hidden";
     menuIcon.classList.remove("menu_open");
@@ -175,6 +175,18 @@ hobby.addEventListener("click", () => {
     firstName.style.visibility = "hidden";
   });
 });
+
+// const removeImage = () => {
+//   coffeeBox.remove();
+//   clothBox.remove();
+//   saunaBox.remove();
+//   cyclingBox.remove();
+//   coffeeContent.remove();
+//   clothContent.remove();
+//   saunaContent.remove();
+//   blackBlock1.remove();
+//   blackBlock3.remove();
+// };
 
 // const commonAction = () => {
 //   menuContent.style.visibility = "hidden";
