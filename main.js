@@ -163,7 +163,7 @@ hobby.addEventListener("click", () => {
   blackBlock1.textContent = "cycling";
   blackBlock3.textContent = "sauna";
   // 画像が表示されてから処理を実行
-  window.onload() = function () {
+  window.addEventListener("DOMContentLoaded", () => {
     // 共通処理
     menuContent.style.visibility = "hidden";
     menuIcon.classList.remove("menu_open");
@@ -173,7 +173,7 @@ hobby.addEventListener("click", () => {
     // 手書き画像表示のON/OFF
     lastName.style.visibility = "hidden";
     firstName.style.visibility = "hidden";
-  };
+  });
 });
 
 // const commonAction = () => {
