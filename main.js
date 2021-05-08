@@ -29,6 +29,12 @@ console.log(moreInformation);
 const coffeeBox = document.createElement("img");
 const clothBox = document.createElement("img");
 const saunaBox = document.createElement("img");
+const cyclingBox = document.createElement("img");
+const coffeeContent = document.createElement("div");
+const clothContent = document.createElement("div");
+const saunaContent = document.createElement("div");
+const blackBlock1 = document.createElement("div");
+const blackBlock3 = document.createElement("div");
 
 // メニューアイコン、クリックイベント
 menuIcon.addEventListener("click", () => {
@@ -62,6 +68,12 @@ hindhi.addEventListener("click", () => {
   coffeeBox.remove();
   clothBox.remove();
   saunaBox.remove();
+  cyclingBox.remove();
+  coffeeContent.remove();
+  clothContent.remove();
+  saunaContent.remove();
+  blackBlock1.remove();
+  blackBlock3.remove();
 });
 
 english.addEventListener("click", () => {
@@ -84,6 +96,12 @@ english.addEventListener("click", () => {
   coffeeBox.remove();
   clothBox.remove();
   saunaBox.remove();
+  cyclingBox.remove();
+  coffeeContent.remove();
+  clothContent.remove();
+  saunaContent.remove();
+  blackBlock1.remove();
+  blackBlock3.remove();
 });
 hobby.addEventListener("click", () => {
   // 共通処理
@@ -97,20 +115,34 @@ hobby.addEventListener("click", () => {
   //   乱数画像表示
   coffeeBox.classList.add("image1");
   clothBox.classList.add("image2");
+  cyclingBox.classList.add("image2");
   saunaBox.classList.add("image3");
-  const coffeeImage = document.querySelector("image1");
-  const clothImage = document.querySelector("image2");
-  const saunaImage = document.querySelector("image3");
   const coffee = ["c１.jpeg", "c２.jpeg", "c３.jpeg"];
   const cloth = ["h１.jpeg", "h２.jpeg", "h３.jpeg"];
   const sauna = ["s１.jpeg", "s２.jpeg", "s３.jpeg"];
+  const cycling = ["cycling1.jpeg", "cycling2.jpeg", "cycling3.jpeg"];
   const coffeeNo = Math.floor(Math.random() * coffee.length);
   const clothNo = Math.floor(Math.random() * cloth.length);
   const saunaNo = Math.floor(Math.random() * sauna.length);
+  const cyclingNo = Math.floor(Math.random() * cycling.length);
   coffeeBox.src = coffee[coffeeNo];
   clothBox.src = cloth[clothNo];
   saunaBox.src = sauna[saunaNo];
-  imageColorBox3.append(coffeeBox);
+  cyclingBox.src = cycling[cyclingNo];
+  imageColorBox3.append(coffeeContent);
   imageColorBox3.append(clothBox);
-  imageColorBox3.append(saunaBox);
+  imageColorBox3.append(saunaContent);
+  imageColorBox1.append(cyclingBox);
+  imageColorBox1.append(blackBlock1);
+  imageColorBox1.append(blackBlock3);
+  // 趣味/説明
+  coffeeContent.classList.add("image1");
+  clothContent.classList.add("image2");
+  saunaContent.classList.add("image3");
+  blackBlock1.classList.add("image1");
+  blackBlock3.classList.add("image3");
+  //   imageColorBox1.append(blackBlock);
+  imageColorBox2.append(coffeeBox);
+  imageColorBox2.append(clothContent);
+  imageColorBox2.append(saunaBox);
 });
