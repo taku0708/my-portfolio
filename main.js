@@ -171,5 +171,4 @@ hobby.addEventListener("click", () => {
   imageColorBox3.append(coffeeContent);
   imageColorBox3.append(clothBox);
   imageColorBox3.append(saunaContent);
-  window.onload = () => {};
 });
